@@ -1,0 +1,22 @@
+package principal;
+
+import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import entidade.Espirito;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Espirito e1 = new Espirito(1, "Pazuzu");
+		Espirito e2 = new Espirito(2, "Abadon");	
+		
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("exemplo-jpa");
+		
+	}
+	
+}
