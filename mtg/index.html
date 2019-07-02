@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <style>
+    .section {
+      padding: 0rem 1.5rem
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="src\logo.png">
+          </a>
+          <a class="navbar-item" href="#">
+              <img src="src\compro.png">
+          </a>
+          <a class="navbar-item" href="#">
+                <img src="src\vendo.png">
+          </a>
+          <a class="navbar-item" href="#">
+            <img src="src\colecao.png">
+          </a>
+        </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <!-- quando a tela for maior vai ocupar 50% e as outras duas vão dividir os outros espaços -->
+       
+
+        <div class="column">
+
+          <!-- formulário cadastro-->
+          <div id="cadastro">
+            <div class="field">
+              <p class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Nome" id="nome">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-award"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Descrição (opcional)" id="campo_descricao">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-info"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control has-icons-left has-icons-right">
+                <input class="input" type="number" placeholder="R$" id="campo_valor">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-donate"></i>
+                </span>
+              </p>
+            </div>
+
+            <div class="field">
+              <button class="button is-primary is-fullwidth is-outlined" id="salvar">Salvar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+        </div>
+      </div>
+    </div>
+    <div id="table">
+                
+    </div>
+  </section>
+  <footer class="footer">
+    
+  </footer>
+  <script defer type="module" src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
